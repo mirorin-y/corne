@@ -111,10 +111,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
-&trans  &none         &none         &none         &kp LC(F5)    &kp F12         &kp MINUS     &kp EQUAL     &kp GRAVE     &kp RC(L)     &kp SQT        &trans
-&trans  &none         &none         &none         &none         &none           &none         &none         &none         &trans        &kp RC(SLASH)  &trans
-                                    &trans        &trans        &trans          &mo 3         &kp RSHIFT    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &trans
+&trans  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &trans
+                                    &trans        &trans        &trans          &none         &none         &trans
             >;
         };
 
@@ -134,6 +134,15 @@
 &trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans        &trans        &trans          &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        BT {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
