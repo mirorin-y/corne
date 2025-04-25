@@ -15,7 +15,6 @@
         combo1 {
             bindings = <&kp ESCAPE>;
             key-positions = <36 37 38>;
-            layers = <1>;
         };
 
         unlock {
@@ -98,7 +97,7 @@
 &trans  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans          &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans        &trans        &trans    &trans  &trans  &trans
+                                      &trans        &mo 1         &trans    &trans  &mo 2   &trans
             >;
         };
     };
