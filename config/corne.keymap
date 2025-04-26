@@ -95,7 +95,7 @@
 
         layer_3 {
             bindings = <
-&trans  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none     &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
+&none   &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none     &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans          &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans        &mo 1         &trans    &trans  &mo 2   &trans
