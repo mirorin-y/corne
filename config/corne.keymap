@@ -32,7 +32,7 @@
 
         mousefinish {
             bindings = <&to 0>;
-            key-positions = <25 26 27 28>;
+            key-positions = <1 2 3 4>;
             layers = <4>;
         };
     };
