@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -22,18 +21,6 @@
         unlock {
             bindings = <&studio_unlock>;
             key-positions = <0 12 24>;
-        };
-
-        mouse {
-            bindings = <&to 4>;
-            key-positions = <25 26 27 28>;
-            layers = <0>;
-        };
-
-        mousefinish {
-            bindings = <&to 0>;
-            key-positions = <1 2 3 4>;
-            layers = <4>;
         };
     };
 
@@ -108,19 +95,10 @@
 
         layer_3 {
             bindings = <
-&none   &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none     &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans        &mo 1         &trans    &trans  &mo 2   &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&none      &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none     &trans          &trans          &trans          &trans           &trans  &none
+&kp LCTRL  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
+&trans     &trans        &trans          &trans        &trans        &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+                                         &trans        &mo 1         &trans    &trans          &mo 2           &trans
             >;
         };
     };
