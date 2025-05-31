@@ -27,11 +27,11 @@
         mouse {
             bindings = <&to 4>;
             key-positions = <25 26 27 28>;
-            layers = <1>;
+            layers = <0>;
         };
 
         mousefinish {
-            bindings = <&to 1>;
+            bindings = <&to 0>;
             key-positions = <25 26 27 28>;
             layers = <4>;
         };
