@@ -25,8 +25,15 @@
         };
 
         mouse {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <25 26 27 28>;
+            layers = <1>;
+        };
+
+        mousefinish {
+            bindings = <&to 1>;
+            key-positions = <25 26 27 28>;
+            layers = <4>;
         };
     };
 
